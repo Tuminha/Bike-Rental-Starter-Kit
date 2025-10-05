@@ -110,7 +110,7 @@ conn = psycopg2.connect(
 <details>
 <summary><strong>Details</strong></summary>
 
-- [ ] Audit missing values, duplicates, and outliers
+- [x] Audit missing values, duplicates, and outliers
 - [ ] Standardize timestamps and timezone handling
 - [ ] Normalize categorical values (stations, weather conditions)
 - [ ] Create derived fields (day of week, hour, weather buckets)
