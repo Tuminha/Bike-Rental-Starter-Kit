@@ -76,7 +76,7 @@ pip install pandas numpy matplotlib seaborn jupyter psycopg2-binary sqlalchemy
 
 ### Setup
 ```bash
-git clone [YOUR_REPO_URL]
+git clone https://github.com/Tuminha/Bike-Rental-Starter-Kit.git
 cd bike-rental-starter-kit
 jupyter notebook notebooks/
 ```
