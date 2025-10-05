@@ -106,19 +106,19 @@ conn = psycopg2.connect(
 
 </details>
 
-### Phase 2: Data Cleaning & Validation 🔄
+### Phase 2: Data Cleaning & Validation ✅
 <details>
 <summary><strong>Details</strong></summary>
 
 - [x] Audit missing values, duplicates, and outliers
-- [ ] Standardize timestamps and timezone handling
-- [ ] Normalize categorical values (stations, weather conditions)
-- [ ] Create derived fields (day of week, hour, weather buckets)
-- [ ] Validate data ranges and business rules
+- [x] Standardize timestamps and timezone handling
+- [x] Normalize categorical values (stations, weather conditions)
+- [x] Create derived fields (day of week, hour, weather buckets)
+- [x] Validate data ranges and business rules
 
 </details>
 
-### Phase 3: Schema Design 📋
+### Phase 3: Schema Design 🔄
 <details>
 <summary><strong>Details</strong></summary>
 
@@ -170,11 +170,11 @@ bike_rental_db/
 └── analytics_views (business intelligence views)
 ```
 
-### Key Metrics (To Be Updated)
-- **Data Quality**: Missing values %, duplicates removed
-- **Performance**: Query execution times, index effectiveness
-- **Coverage**: Time period analysis, station utilization
-- **Insights**: Weather correlation coefficients, peak usage patterns
+### Key Metrics (Updated)
+- **Data Quality**: Missing values handled, 93 extreme outliers removed
+- **Performance**: Clean datasets ready for database loading
+- **Coverage**: 247,111 bike trips + 366 weather records (full year 2016)
+- **Insights**: Rich derived features created for analytics
 
 ### 📌 Business Interpretation
 - *Weather Impact Analysis*: Correlation between temperature, precipitation, and ridership
