@@ -142,19 +142,19 @@ conn = psycopg2.connect(
 
 </details>
 
-### Phase 5: Analytics Views 🔄
+### Phase 5: Analytics Views ✅
 <details>
 <summary><strong>Details</strong></summary>
 
-- [ ] Create weather-ridership correlation views
-- [ ] Build time-based aggregations (hourly/daily/weekly)
-- [ ] Design station utilization analytics
-- [ ] Implement KPI views (ride counts, duration stats)
-- [ ] Document view purposes and usage
+- [x] Create weather-ridership correlation views
+- [x] Build time-based aggregations (hourly/daily/weekly)
+- [x] Design station utilization analytics
+- [x] Implement KPI views (ride counts, duration stats)
+- [x] Document view purposes and usage
 
 </details>
 
-### Phase 6: Documentation & Portfolio 📝
+### Phase 6: Documentation & Portfolio 🔄
 - **Summary**: Comprehensive project write-up with technical decisions and business insights
 
 ---
@@ -171,10 +171,11 @@ bike_rental_db/
 
 ### Key Metrics (Updated)
 - **Data Quality**: Missing values handled, 93 extreme outliers removed
-- **Performance**: PostgreSQL database implemented with 6 strategic indexes
+- **Performance**: PostgreSQL database with 6 strategic indexes + 6 analytics views
 - **Coverage**: 247,111 bike trips + 366 weather records (full year 2016)
 - **Database**: 3 normalized tables with foreign key relationships
-- **Insights**: Rich derived features and analytics-ready structure
+- **Analytics**: 6 comprehensive business intelligence views
+- **Insights**: Weather correlation, peak hours, station utilization, KPI tracking
 
 ### 📌 Business Interpretation
 - *Weather Impact Analysis*: Correlation between temperature, precipitation, and ridership
@@ -217,10 +218,12 @@ The PostgreSQL database will contain normalized tables with proper relationships
 - **calendar**: Date dimension with holidays and business days
 
 ### Analytics Views
-- **daily_ridership_weather**: Daily aggregates with weather correlation
-- **hourly_patterns**: Time-based usage patterns
-- **station_utilization**: Station performance metrics
-- **weather_impact**: Weather effect analysis by various dimensions
+- **daily_weather_rides**: Daily weather-ridership correlation analysis
+- **hourly_ridership_patterns**: Peak time analysis and optimization
+- **weekly_ridership_patterns**: Day-of-week usage patterns
+- **station_utilization**: Station performance and placement optimization
+- **monthly_kpi_summary**: Business performance tracking with weather correlation
+- **weather_impact_analysis**: Weather sensitivity for operations planning
 
 ---
 
