@@ -118,19 +118,19 @@ conn = psycopg2.connect(
 
 </details>
 
-### Phase 3: Schema Design 🔄
+### Phase 3: Schema Design ✅
 <details>
 <summary><strong>Details</strong></summary>
 
-- [ ] Design entity relationships (rides, stations, weather, calendar)
-- [ ] Define table structures with appropriate data types
-- [ ] Plan primary/foreign key relationships
-- [ ] Create ER diagram and DDL scripts
-- [ ] Design indexing strategy for analytics queries
+- [x] Design entity relationships (rides, stations, weather, calendar)
+- [x] Define table structures with appropriate data types
+- [x] Plan primary/foreign key relationships
+- [x] Create ER diagram and DDL scripts
+- [x] Design indexing strategy for analytics queries
 
 </details>
 
-### Phase 4: Database Implementation 🗄️
+### Phase 4: Database Implementation 🔄
 <details>
 <summary><strong>Details</strong></summary>
 
@@ -163,10 +163,9 @@ conn = psycopg2.connect(
 ### Database Schema Overview
 ```
 bike_rental_db/
-├── rides (trip data with weather correlation)
-├── stations (bike station information)
-├── weather (daily/hourly weather data)
-├── calendar (holiday and date dimension)
+├── rides (247,111 trip records with weather correlation)
+├── stations (102 unique bike stations with coordinates)
+├── weather (366 daily weather observations)
 └── analytics_views (business intelligence views)
 ```
 
